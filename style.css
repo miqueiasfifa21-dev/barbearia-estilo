@@ -243,3 +243,66 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+/* Formulário de agendamento */
+.form-agendamento {
+    max-width: 520px;
+    margin: 35px auto 0;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: left;
+    background: #1c1c1c;
+    border: 1px solid #303030;
+    border-radius: 12px;
+}
+
+.form-agendamento label {
+    color: #eeeeee;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.form-agendamento input,
+.form-agendamento select {
+    width: 100%;
+    min-height: 46px;
+    padding: 12px;
+    color: #f5f5f5;
+    background: #111111;
+    border: 1px solid #444444;
+    border-radius: 6px;
+    font: inherit;
+}
+
+.form-agendamento input:focus,
+.form-agendamento select:focus {
+    outline: 2px solid #d8ae62;
+    outline-offset: 2px;
+}
+
+.form-agendamento .botao {
+    width: 100%;
+    margin-top: 16px;
+    border: none;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-agendamento .aviso {
+    text-align: center;
+    line-height: 1.5;
+}
+
+@media (max-width: 500px) {
+    .form-agendamento {
+        padding: 20px;
+    }
+
+    .form-agendamento .botao {
+        font-size: 14px;
+    }
+}
