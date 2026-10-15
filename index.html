@@ -77,26 +77,88 @@
             </p>
         </section>
 
-        <section class="contato" id="contato">
-            <p class="etiqueta">VAMOS MARCAR?</p>
-            <h2>Seu próximo corte começa aqui.</h2>
-            <p>Entre em contato e consulte os horários disponíveis.</p>
+        
+<
+<section class="contato" id="contato">
+    <p class="etiqueta">VAMOS MARCAR?</p>
+    <h2>Agende seu horário</h2>
+    <p>Escolha o serviço e informe quando gostaria de vir.</p>
 
-            <a class="botao" id="botao-whatsapp"
-               href="https://wa.me/5500000000000"
-               target="_blank" rel="noopener noreferrer">
-                Agendar pelo WhatsApp
-            </a>
+    <form id="form-agendamento" class="form-agendamento">
 
-            <p class="aviso">
-                Site demonstrativo. Nome, preços e contato são fictícios.
-            </p>
-        </section>
-    </main>
+        <label for="nome">Seu nome</label>
+        <input
+            type="text"
+            id="nome"
+            name="nome"
+            placeholder="Como podemos te chamar?"
+            required
+            maxlength="80"
+        >
 
-    <footer>
-        <p>© 2026 Barbearia Estilo. Site demonstrativo.</p>
-    </footer>
+        <label for="servico">Escolha o serviço</label>
+        <select id="servico" name="servico" required>
+            <option value="">Selecione um serviço</option>
+            <option value="Corte masculino - R$ 35,00">
+                Corte masculino - R$ 35,00
+            </option>
+            <option value="Barba - R$ 20,00">
+                Barba - R$ 20,00
+            </option>
+            <option value="Corte + barba - R$ 50,00">
+                Corte + barba - R$ 50,00
+            </option>
+        </select>
 
-</body>
-</html>
+        <label for="data">Dia desejado</label>
+        <input
+            type="date"
+            id="data"
+            name="data"
+            required
+        >
+
+        <label for="horario">Horário desejado</label>
+        <select id="horario" name="horario" required>
+            <option value="">Selecione um horário</option>
+            <option value="09:00">09:00</option>
+            <option value="10:00">10:00</option>
+            <option value="11:00">11:00</option>
+            <option value="13:00">13:00</option>
+            <option value="14:00">14:00</option>
+            <option value="15:00">15:00</option>
+            <option value="16:00">16:00</option>
+            <option value="17:00">17:00</option>
+            <option value="18:00">18:00</option>
+        </select>
+
+        <button type="submit" class="botao">
+            Solicitar agendamento pelo WhatsApp
+        </button>
+
+        <p class="aviso">
+            O horário será confirmado pela barbearia via WhatsApp.
+        </p>
+
+    </form>
+</section>
+
+    <p class="etiqueta">VAMOS MARCAR?</p>
+    <h2>Seu próximo corte começa aqui.</h2>
+    <p>Entre em contato e consulte os horários disponíveis.</p>
+
+    <a
+        class="botao"
+        id="botao-whatsapp"
+        href="#"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        Agendar pelo WhatsApp
+    </a>
+
+    <p class="aviso">
+        Site demonstrativo. Nome, preços e contato são fictícios.
+    </p>
+</section>
+
