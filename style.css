@@ -326,7 +326,7 @@ footer {
             rgba(10, 10, 10, 0.75) 48%,
             rgba(10, 10, 10, 0.25) 100%
         ),
-        url("imagens/capa.jpg") center 35% / cover no-repeat;
+        url("capa.jpg") center 35% / cover no-repeat;
     min-height: 560px;
     display: flex;
     align-items: center;
