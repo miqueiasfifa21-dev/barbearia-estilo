@@ -315,3 +315,126 @@ footer {
         padding: 18px;
     }
 }
+/* CAPA PREMIUM */
+.hero {
+    position: relative;
+    isolation: isolate;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(10, 10, 10, 0.96) 0%,
+            rgba(10, 10, 10, 0.75) 48%,
+            rgba(10, 10, 10, 0.25) 100%
+        ),
+        url("imagens/capa.jpg") center 35% / cover no-repeat;
+    min-height: 560px;
+    display: flex;
+    align-items: center;
+    padding: 80px 8%;
+}
+
+.hero-conteudo {
+    max-width: 620px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    color: #f5f0e6;
+}
+
+.hero .etiqueta {
+    color: #d4af62;
+}
+
+.hero .descricao {
+    color: #e0ded8;
+}
+
+.hero .botao {
+    background: #c9a45c;
+    color: #151515;
+    border: 1px solid #c9a45c;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.hero .botao:hover {
+    background: #e1c47f;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+    .hero {
+        min-height: 500px;
+        padding: 60px 6%;
+        background-position: 60% center;
+    }
+}/* GALERIA DE CORTES */
+.galeria {
+    background: #111111;
+    color: #f5f0e6;
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.galeria h2 {
+    margin: 10px 0;
+    color: #f5f0e6;
+}
+
+.galeria .etiqueta {
+    color: #c9a45c;
+    letter-spacing: 3px;
+}
+
+.galeria-descricao {
+    color: #c7c2b8;
+    margin-bottom: 35px;
+}
+
+.grade-galeria {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    margin-top: 35px;
+}
+
+.foto-corte {
+    margin: 0;
+    overflow: hidden;
+    border: 1px solid #403522;
+    border-radius: 8px;
+    background: #1b1b1b;
+}
+
+.foto-corte img {
+    display: block;
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.foto-corte:hover img {
+    transform: scale(1.04);
+}
+
+.foto-corte figcaption {
+    padding: 16px 10px;
+    color: #d4af62;
+    font-weight: 600;
+}
+
+@media (max-width: 700px) {
+    .galeria {
+        padding: 55px 6%;
+    }
+
+    .grade-galeria {
+        grid-template-columns: 1fr;
+    }
+
+    .foto-corte img {
+        height: 300px;
+    }
+}
